@@ -1,0 +1,73 @@
+Ruby
+
+1. GRAVITY_CONSTANT = 9.8
+2. b), c),
+3. 
+def example
+	yield
+end
+
+example{puts 'Hello World'}
+
+4. def lay_so_le
+	a = [1, 3, 8, 9, 19, 23, 42, 19]
+	i = 0
+	while a[i]
+		if a[i]%2 != 0
+		   puts a[i]
+		end
+		i++
+	end
+   end
+5. Symbol dai dien cho 1 object co gia tri duy nhat (unique object id). Trong khi do, nhieu string nhung co cung 1 content thi se co object id khac nhau.
+6. $name = "Tri"
+7. a duoc su dung khi a khong nil hoac a la true. Nguoc lai, neu a false hoac nil thi su dung expression ben phai.
+8. public, private, protected
+
+Rails
+1. 
+HTTP verb: GET - 
+	POST - 
+
+2.
+    (-) save
+
+    (-) valid
+
+    (1) before_validation
+
+    (-) validate
+
+    (2) after_validation
+
+    (3) before_save
+
+    (4) before_create
+
+    (-) create
+
+    (5) after_create
+
+    (6) after_save
+
+    (7) after_commit
+
+3.
+        after_action,
+        append_after_action,
+        append_around_action,
+        append_before_action,
+        around_action
+        before_action
+        prepend_after_action,
+        prepend_around_action,
+        prepend_before_action
+        skip_action_callback,
+        skip_after_action,
+        skip_around_action,
+        skip_before_action,
+        skip_filter
+
+
+
+
