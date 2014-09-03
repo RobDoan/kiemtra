@@ -56,5 +56,23 @@
         skip_around_action,
         skip_before_action,
         skip_filter
-
+#may em khong co rails
+4.  rails new BookManagement
+	rails g scaffold Book name:string, author:string, publish_on:date
+5.	validates :name, presence: true
+	validate :publish_in_future, :on => :create
+	def publish_in_future
+	    if publish_on && publish_on <= Date.today
+	      errors.add(:publish_on, 'should be in the future')
+	    end
+  	end
+6.rails g model Review content:string, user_id:integer
+7.rails g model User name:string, email:string
+9.  #book model
+		has_many books
+	#review model
+		belongs_to book
+		belongs_to user
+	#user model
+		has_many reviews
 
