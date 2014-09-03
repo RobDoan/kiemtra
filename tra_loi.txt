@@ -1,0 +1,79 @@
+﻿## Ruby
+
+1. Constance defined by string and start by an uppercase:
+ex : define constance named var1 with value 100 : VAR1 = 100
+
+2. (b), (c).
+
+3.
+def simple
+	yield
+end
+
+Call simple function
+
+simple{puts “This is my block code”}
+
+4. 
+arr = [1, 3, 8, 9, 19, 23, 42, 19]
+arr.each { |a| do if a%2!=0 print a end }
+
+5. Symbols are immutable, String is mutable, It mean Symbol can changed after assigned, String is overwritten
+
+6. We use dollar sign to define global vairiables : 
+Ex : $global1, $global2
+
+8. 3 level: public, private, protected
+
+
+## Rails
+2. Callback model : 
+	before_validation
+    	after_validation
+   	before_save
+   	around_save
+    	before_create
+    	around_create
+    	after_create
+    	after_save
+	before_update
+	around_update
+	after_update
+    	before_destroy
+    	around_destroy
+    	after_destroy
+	after_find
+	after_initialize
+	after_touch
+
+3. Callback of controller : 
+	before_action
+	around_action
+	rescue_from
+	force_ssl
+
+4. rails new BookManagement
+
+5. rails scaffold Book name string, author integer, published_on date
+
+6. validates :name, :presence => true
+  validate :published_on, :valid_date
+
+def valid_date
+	if :published_on && :published_on < Date.Now
+:published_on.adderror(“Error”)
+end
+
+7. rails g model Review content string, user_id integer
+
+8. 
+Book : 
+	has_many :reviews
+Review :
+	belongs_to :book
+	belongs_to :user
+User : 
+	has_many :reviews
+
+
+
