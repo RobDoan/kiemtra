@@ -1,0 +1,93 @@
+RUBY
+
+1. Viet hoa tat ca cac ki tu cua  bien (doi voi 1 tu) , voi bien 2 tu thi co dau gach chan
+	- Vi du: NUMBER = 100
+				FIRST_NAME = 'Nguyen'
+
+2. Cho gia tri false
+	b
+	c
+
+3.
+
+4. a = [1,2,8,9,19,23,42,19]
+	a.each do |n|
+		if n % 2 != 0
+			puts n
+		end
+	end
+
+5. khac nhau giua string voi symbol la 
+	- Moi 1 string se co 1 object id -> 3 string giong nhau se co 3 object id khac nhau -> ton bo nho
+		vi du: "test".object_id 
+					=> 15008460
+				"test".object_id 
+					=> 14962620
+				"test".object_id 		
+					=> 14918160
+	- Trong khi symbol chi cap 1 id va khi goi lai no tiep se lay gia tri cua symbol da co truoc ma ko cap phap bo nho luu them 1 gia tri tuong tu
+		vi du: :test.object_id
+ 					=> 197768 
+ 				:test.object_id
+ 					=> 197768 
+ 				:test.object_id
+ 					=> 197768 
+
+6. Cach khai bao global variable
+	$global_variable = 10
+
+7.
+
+8. 	public
+	protected
+	private
+
+RAILS
+
+1. Prefix Verb   URI Pattern                                		Controller#Action
+    book_reviews GET    /books/:book_id/reviews(.:format)          	reviews#index
+                 POST   /books/:book_id/reviews(.:format)          	reviews#create
+ new_book_review GET    /books/:book_id/reviews/new(.:format)      	reviews#new
+edit_book_review GET    /books/:book_id/reviews/:id/edit(.:format) 	reviews#edit
+     book_review GET    /books/:book_id/reviews/:id(.:format)      	reviews#show
+                 PATCH  /books/:book_id/reviews/:id(.:format)      	reviews#update
+                 PUT    /books/:book_id/reviews/:id(.:format)      	reviews#update
+                 DELETE /books/:book_id/reviews/:id(.:format)      	reviews#destroy
+       like_book POST   /books/:id/like(.:format)                  	books#like
+ most_view_books GET    /books/most_view(.:format)                 	books#most_view
+           books GET    /books(.:format)                           	books#index
+                 POST   /books(.:format)                           	books#create
+        new_book GET    /books/new(.:format)                       	books#new
+       edit_book GET    /books/:id/edit(.:format)                  	books#edit
+            book GET    /books/:id(.:format)                       	books#show
+                 PATCH  /books/:id(.:format)                       	books#update
+                 PUT    /books/:id(.:format)                       	books#update
+                 DELETE /books/:id(.:format)                       	books#destroy
+
+2. 	before_validation
+	after_validation
+	before_create
+	after_create
+	before_save
+	after_save
+	before_destroy
+	after_destroy
+	before_create
+	after_create
+
+3. 	before_action
+	after_action
+	skip_action_callback
+	skip_after_action
+	skip_around_action
+	skip_before_action
+	skip_filter
+	prepend_after_action
+	prepend_around_action
+	prepend_before_action
+	append_after_action
+	append_around_action
+	append_before_action
+	around_action
+	_insert_callbacks
+	_normalize_callback_options
