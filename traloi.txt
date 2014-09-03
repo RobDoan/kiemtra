@@ -22,7 +22,7 @@ end
 
 5. 
 - su dung Symbol thi se tiet kiem duoc o nho hon String
-- Symbol thi immutable, con String laf mutable
+- Symbol thi immutable, con String la mutable
 
 6.
  $$this_is_global_variable
