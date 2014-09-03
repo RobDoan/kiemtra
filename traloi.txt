@@ -1,0 +1,9 @@
+1.Dung bien viet hoa. Ex: VAR1, VAR2
+2.
+3.
+4.
+5.
+6. Dung $var
+7. Set a = b neu a la nil, false, undefine. Nguoc lai a = a
+8.private; protected
+	
