@@ -1,0 +1,23 @@
+Dao_Nguyen_Vy
+
+1. CONSTANTS_NAME = value
+------------------------------
+2.
+(b) 
+(c)
+--------------------------------
+4.
+def lietkesole(arr)
+   arr.each do |i|
+	if i%2 != 0
+	 puts i
+	end
+   end
+end
+-------------------------------------------
+5.Su dung symbol co the tiet kiem memory hon string, vi symbol chi co mot id duy nhat, con string id co the khac nhau
+------------------------------------------
+6. $variable = value
+--------------------------------------------
+8. public | private | protected 
+---------------------------------------------
